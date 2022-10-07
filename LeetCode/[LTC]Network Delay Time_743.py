@@ -26,7 +26,7 @@ class Solution:
             for time in times :
                 if time[0]==node :                                    #해당 node와 인접한 node에 대해
                     if table[time[1]-1]>table[time[0]-1]+time[2] :    #table 값 update
-                        table[time[1]-1]=table[time[0]-1]+time[2]     #node에 갈 수 있는 최소값 갱신
+                        table[time[1]-1]=table[time[0]-1]+time[2]     #node에 갈 수 있는 최소값 갱신 
                         
             for t in range(len(table)) :          
                 if (t+1) not in visited and m>table[t] :              #방문하지 않은 node중 최소값을 가지는 node 선택

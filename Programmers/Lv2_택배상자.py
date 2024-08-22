@@ -18,3 +18,5 @@ def solution(order):
             else : 
                 break
     return i
+
+# 문제 풀이 https://suding88.tistory.com/137

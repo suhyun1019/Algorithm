@@ -1,3 +1,4 @@
+# 스택 사용 
 def solution(ingredient):
     answer = 0
     stack = []

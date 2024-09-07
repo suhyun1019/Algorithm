@@ -1,0 +1,25 @@
+def count(seq) :
+    global ans
+    total = 0
+    for s in seq :
+        if total+s>=0 :
+            total+=s
+        else :
+            total = 0
+        ans.append(total)
+
+def solution(sequence):
+    global ans
+    ans = []
+    s1, s2 = sequence[:], sequence[:]
+    
+    for i in range(len(sequence)) :
+        if i%2 :
+            s1[i]*=(-1)
+        else :
+            s2[i]*=(-1)
+        
+    count(s1)
+    count(s2)
+    
+    return max(ans)
